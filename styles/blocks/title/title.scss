@@ -1,0 +1,20 @@
+.title{
+  font-size: 60px;
+  line-height: 68px;
+  font-weight: 600;
+  color: $text-primary;
+  max-width: 1103px;
+  margin: 120px auto 0;
+  padding: 0;
+
+  @media screen and (max-width: 1130px) {
+    font-size: 33px;
+    line-height: 37px;
+    margin: 70px auto 0;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 26px;
+    line-height: 31.47px;
+  }
+}

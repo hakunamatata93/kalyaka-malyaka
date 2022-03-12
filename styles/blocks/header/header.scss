@@ -1,0 +1,108 @@
+.header{
+  background-color: $header-color;
+  min-height: 640px;
+  max-width: 1420px;
+  border-radius: $radius;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 30px 0 0 160px;
+
+    @media screen and (max-width: $desktop) {
+      padding: 30px 0 0 50px;
+      min-height: 602px;
+    }
+
+    @media screen and (max-width: $mobile) {
+       padding: 30px 0 0 50px;
+       min-height: 602px;
+     }
+
+
+  &__logo{
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    background-image: url(../images/header-logo.svg);
+    background-size: cover;
+  }
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 69px;
+    max-width: 650px;
+    color: #fff;
+    margin: 60px 0 28px;
+    padding: 0;
+
+
+      @media screen and (max-width: $tablet) {
+        font-size: 33px;
+        line-height: 37px;
+        max-width: 360px;
+        margin: 50px 0 20px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: 24px;
+        line-height: 29px;
+        max-width: 360px;
+        margin: 50px 0 14px;
+      }
+      @media screen and (max-width: $mobile-small) {
+        font-size: 12px;
+        line-height: 14.5px;
+        max-width: 260px;
+      }
+    }
+
+  &__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 450px;
+    margin: 0;
+    padding: 0;
+
+
+    @media screen and (max-width: $tablet) {
+      font-size: 15px;
+      line-height: 20px;
+      max-width: 360px;
+    }
+    @media screen and (max-width: $mobile-small) {
+      font-size: 12px;
+      line-height: 14.5px;
+      max-width: 260px;
+    }
+  }
+
+  &__image{
+    position: absolute;
+    height: 640px;
+    width: 311px;
+    bottom: -30px;
+    right: 220px;
+    filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0;
+
+    @media screen and (max-width: $desktop) {
+      width: 250px;
+      height: 502px;
+      right: 45px;
+      bottom: -20px;
+    }
+    @media screen and (max-width: $mobile) {
+      position: static;
+      margin-top: 50px;
+    }
+
+  }
+}
+

@@ -1,0 +1,30 @@
+.phones{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__image{
+    margin-right: 25px;
+  width: 100%;
+
+  @media screen and (max-width: 1130px) {
+    margin-right: 15px;
+    width: 226px;
+    height: 461px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 260px;
+    height: 522px;
+  }
+  }
+
+  &__image_hidden{
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+}
