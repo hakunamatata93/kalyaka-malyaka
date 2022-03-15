@@ -1,13 +1,14 @@
 .feedback{
   max-width: 1100px;
   min-height: 628px;
-  margin: 0 auto 120px;
+  margin: 120px auto;
   background-color: $secondary-color;
   display: flex;
   flex-direction: column;
 
   @media screen and (max-width: $tablet) {
     min-height: 611px;
+    margin-top: 70px;
     margin-bottom: 70px;
   }
 
