@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каляка</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="page">
+  <div class="page__wrapper">
+    <header class="header">
+        <div class="header__logo"></div>
+        <h1 class="header__title">Не умеете рисовать?
+          Не беда!</h1>
+        <p class="header__text">С помощью нашего приложения вы можете чиркануть каляку и получить шедевр.</p>
+        <img class="header__image" src="./images/header-image.png" alt="каляка">
+        <button type="button" class="button button_place_header">Подробнее</button>
+    </header>
+
+    <main class="content">
+      <section class="cards-intro">
+        <ul class="cards-list page-cards page-cards_place_upper">
+          <li class="card">
+            <p class="card__feature">AI</p>
+            <h3 class="card__title">Умный&nbsp;интелект приложения</h3>
+            <p class="card__description">
+              С&nbsp;помощью AI приложение анализирует картины мастеров и
+              современных практиков рисования, и достраивает картину
+              за&nbsp;вас.
+            </p>
+          </li>
+          <li class="card card_hidden">
+            <p class="card__feature">Ч/Б и Цвет</p>
+            <h3 class="card__title">Рисуйте в любом стиле</h3>
+            <p class="card__description">
+              Будь&nbsp;то карандашная каляка-маляка или цветное
+              произведение, приложение поможет в&nbsp;любой ситуации.
+            </p>
+          </li>
+        </ul>
+        <div class="radio-buttons">
+          <button
+            class="radio-button radio-button_active"
+            type="button"
+            name="card-first"
+          ></button>
+          <button
+            class="radio-button"
+            type="button"
+            name="card-second"
+          ></button>
+        </div>
+      </section>
+
+      <section class="kalyaka-phones">
+        <h2 class="title kalyaka-phones__title">
+          Чик-чирик и ваша каляка превращается в&nbsp;изумительное
+          произведение искусства.
+        </h2>
+
+        <div class="phones">
+          <img
+            class="phones__image"
+            src="images/kalyaka_low.png"
+            alt="1 стадия рисунка"
+          />
+          <img
+            class="phones__image phones__image_hidden"
+            src="images/kalyaka_medium.png"
+            alt="2 стадия рисунка"
+          />
+          <img
+            class="phones__image phones__image_hidden"
+            src="images/kalyaka_high.png"
+            alt="финальная стадия рисунка"
+          />
+        </div>
+        <div class="radio-buttons">
+          <button
+            class="radio-button radio-button_active"
+            type="button"
+            name="card-first"
+          ></button>
+          <button
+            class="radio-button"
+            type="button"
+            name="card-second"
+          ></button>
+          <button
+            class="radio-button"
+            type="button"
+            name="card-third"
+          ></button>
+        </div>
+      </section>
+
+      <section class="cards-outro">
+        <ul class="cards-list page-cards">
+          <li class="card">
+            <p class="card__feature">Быстро</p>
+            <h3 class="card__title">Проблем с&nbsp;рисованием — нет</h3>
+            <p class="card__description">
+              Рисуйте в&nbsp;приложении доступными кистями: карандаш,
+              маркер, линер, масляная кисть и многие другие...
+            </p>
+          </li>
+          <li class="card card_hidden">
+            <p class="card__feature">Просто</p>
+            <h3 class="card__title">
+              Нарисовали, преобразовали, сохранили
+            </h3>
+            <p class="card__description">
+              Раз, два, три, больше нечего тут рассказать.
+            </p>
+          </li>
+        </ul>
+        <div class="radio-buttons">
+          <button
+            class="radio-button radio-button_active"
+            type="button"
+            name="card-first"
+          ></button>
+          <button
+            class="radio-button"
+            type="button"
+            name="card-second"
+          ></button>
+        </div>
+        <h2 class="title cards-outro__title">
+          Качайте приложение и улучшайте свои художества, а&nbsp;потом
+          хвастайтесь ими!
+        </h2>
+      </section>
+
+      <section class="feedback">
+        <div class="feedback__header">
+          <h3 class="feedback__title">
+            Хотите нам что&#8209;то посоветовать?
+          </h3>
+          <p class="feedback__description">
+            Оставьте заявку и мы&nbsp;свяжемся с вами.
+          </p>
+        </div>
+        <form class="form" name="application">
+          <input
+            type="text"
+            name="user_name"
+            class="form__input form__input_type_name"
+            placeholder="Ваше Имя"
+            required
+          />
+
+          <input
+            type="email"
+            name="user_email"
+            class="form__input form__input_type_email"
+            placeholder="Контактный Email"
+            required
+          />
+
+          <textarea
+            name="user_message"
+            class="form__input form__input_type_message"
+            placeholder="Сообщение"
+            required
+          ></textarea>
+
+          <button type="submit" class="button button_place_form">
+            Оставить заявку
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <h3 class="footer__title">Хотите скачать приложение?</h3>
+          <p class="footer__subtitle">Качайте в ЭпСтор и ГуглПлэй.</p>
+          <button type="button" class="button button_place_footer">
+            Уже скоро!
+          </button>
+          <img class="footer__image" src="./images/kalyaka_footer.png" alt="каляка">
+    </footer>
+    </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

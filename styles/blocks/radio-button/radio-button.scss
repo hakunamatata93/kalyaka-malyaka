@@ -1,0 +1,27 @@
+.radio-button{
+  width: 4px;
+  height: 4px;
+  background-color: $radio;
+  border-radius: 50%;
+  @include reset;
+  margin-right: 4px;
+  box-sizing: border-box;
+  border: none;
+  display: none;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: inline-block;
+  }
+}
+
+.radio-button_active {
+  background-color: $radio-active;
+}

@@ -1,0 +1,48 @@
+.form{
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 470px 470px;
+  column-gap: 40px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input{
+    width: 470px;
+    min-height: 54px;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    @media screen and (max-width: $mobile) {
+      width: 260px;
+      font-size: 12px;
+    }
+  }
+
+  &__input_type_message{
+    width: 980px;
+  min-height: 130px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+
+  @media screen and (max-width: $tablet) {
+    width: 470px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 260px;
+  }
+  }
+}
